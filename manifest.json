@@ -1,0 +1,17 @@
+{
+  "name": "Water Down The Web",
+  "version": "0.1",
+  "description": "Make your browsing experience less addictive.",
+  "manifest_version": 2,
+  "permissions": [
+  	"activeTab",
+  	"declarativeContent",
+  	"<all_urls>"
+  	],
+    "content_scripts": [
+	   {
+	      "matches":	["<all_urls>"],
+	      "css":	["grayscale.css"]
+	   }
+	]
+}
